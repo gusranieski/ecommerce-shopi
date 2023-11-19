@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Layout from "../../Components/Layout";
 import Card from "../../Components/Card";
+import ProductDetail from "../../Components/ProductDetail";
 import { apiUrl } from "../../config/apiConfig";
 
 function Home() {
@@ -32,6 +33,7 @@ function Home() {
             )) || "No items to display"}
           </div>
         )}
+        <ProductDetail />
     </Layout>
   );
 }
